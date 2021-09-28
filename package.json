@@ -1,0 +1,14 @@
+{
+  "name": "safenote",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "browserify:js": "browserify ./js/cryptofunctions.node.js -o ./js/cryptofunctions.browserify.js",
+    "uglify:js" : "uglifyjs ./js/cryptofunctions.browserify.js -o ./src/cryptofunctions.min.js -c",
+    "devConvertJs" : "npm-run-all browserify:js uglify:js"
+  },
+  "author": "",
+  "license": "ISC"
+}

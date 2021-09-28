@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crypto Text</title>
+    <link rel="stylesheet" href="src/style.css" />
+    <link rel="shortcut icon" href="favicon.png" type="image/png" />
+    <meta name="description" content="Encrypt and decrypt Your text with password">
+  </head>
+  <body>
+    <div class="container">
+      <header>Crypto Text</header>
+      <div class="buttons">
+        <button id="encrypt-btn">Encrypt</button>
+        <button id="decrypt-btn">Decrypt</button>
+      </div>
+      <ul id="info">
+        <li>Encrypt text with your password.</li>
+        <li>Uses Advanced Encryption Standard Algorithm</li>
+        <li>It completely works in Offline.</li>
+        <li>We wont collect your data.</li>
+        <li>Decrypt your data any time.</li>
+        <li>Decryption of your Encrypted text only works here.</li>
+        <li>Click on the buttons to Encrypt and decrypt your text.</li>
+        <li>Interested in Code.? <a href="http://github.com/akshayurs"> View full source code in Github.</a></li>
+      </ul>
+      <div id="encrypted-output">
+        <h2>Encrypted Output:</h2>
+        <textarea cols="32" rows="2" id="encrypted-message"></textarea>
+        <button onclick="copyText('encrypted')">Copy</button>
+      </div>
+      <div id="decrypted-output">
+        <h2>Decrypted Output:</h2>
+        <textarea id="decrypted-message"></textarea>
+        <button onclick="copyText('decrypted')">Copy</button>
+    </div>
+    <script src="src/cryptofunctions.min.js"></script>
+    <script src="src/client.js"></script>
+  </body>
+</html>
